@@ -15,7 +15,7 @@ while incr<5:
 for i in x:
   y.append(math.sin(i))
   z.append(math.cos(i))
-  r.append(math.tan(i))
+  r.append(math.tanh(i))
 
 
 plt.plot(x,y,'--')
