@@ -7,6 +7,7 @@ incr=-5
 x=[]
 y=[]
 z=[]
+r=[]
 while incr<5:
   x.append(incr)
   incr+=0.1
@@ -14,10 +15,12 @@ while incr<5:
 for i in x:
   y.append(math.sin(i))
   z.append(math.cos(i))
+  r.append(math.tan(i))
 
 
 plt.plot(x,y,'--')
 plt.plot(x,z,'*')
-plt.legend(["Sin(x)", "Cos(x)"])
+plt.plot(x,r)
+plt.legend(["Sin(x)", "Cos(x)","Tan(x)"])
 plt.grid()
 plt.show()
